@@ -1,0 +1,83 @@
+.topnav {
+	background-color: #333;
+	overflow: hidden;
+  }
+  
+  .topnav a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 12px 16px;
+	text-decoration: none;
+	background-color: transparent;
+	transition: background-color 0.3s ease;
+	position: relative;
+	overflow: hidden;
+  }
+  
+  .topnav a:hover {
+	background-color: #111;
+  }
+  
+  .topnav a:active {
+	background-color: #999;
+	transform: scale(0.95);
+  }
+  
+  .topnav .active a {
+	background-color: #4CAF50;
+	border-radius: 5px;
+  }
+  
+  .topnav .active a::after {
+	background-color: transparent;
+  }
+  
+  .topnav a:focus {
+	outline: none;
+  }
+  
+  .topnav a::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #4CAF50;
+	transition: transform 0.3s ease;
+	transform: scaleX(0);
+	transform-origin: left;
+  }
+  
+  .topnav a:hover::after,
+  .topnav .active a::after {
+	transform: scaleX(1);
+  }
+  
+  .topnav a::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background-color: transparent;
+	transition: transform 0.3s ease;
+	transform: scaleX(1);
+	transform-origin: right;
+  }
+  
+  .topnav a:hover::before,
+  .topnav .active a::before {
+	transform: scaleX(0);
+  }
+  
+  .topnav .home a {
+	background-color: #ff0000;
+  }
+  
+  .topnav .home a::after {
+	background-color: #ff0000;
+  }
+  

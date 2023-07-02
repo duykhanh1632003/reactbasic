@@ -1,0 +1,54 @@
+// ListUser.scss
+
+.listUsercontainer {
+	border: 1px solid #ccc;
+	background-color: #f5f5f5;
+	padding: 10px;
+  
+	.title {
+	  font-size: 20px;
+	  font-weight: bold;
+	  margin-bottom: 10px;
+	  color: #333;
+	}
+  
+	.list-user-content {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+  
+	  .child {
+		border: 2px solid #ccc;
+		background-color: #f8f8f8;
+		color: #333;
+		padding: 15px;
+		margin-bottom: 10px;
+		font-family: Arial, sans-serif;
+		font-size: 16px;
+		line-height: 1.4;
+		text-align: center;
+		border-radius: 10px;
+  
+		&:hover {
+		  background-color: #f0f0f0;
+		}
+  
+		&:nth-child(2n) {
+		  background-color: #ffddee; // Màu hồng
+		}
+  
+		&:nth-child(3n) {
+		  background-color: #ffdddd; // Màu đỏ
+		}
+  
+		&:nth-child(4n) {
+		  background-color: #ddffdd; // Màu xanh lá cây
+		}
+  
+		&:nth-child(5n) {
+		  background-color: #ddeeff; // Màu xanh dương
+		}
+	  }
+	}
+  }
+  
