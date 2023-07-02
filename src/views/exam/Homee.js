@@ -2,7 +2,7 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import MauSac from "../HOC/MauSac";
 import logo from '../../asssets/images/anh-anime-chibi.webp';
-
+import { Connect } from "react-redux";
 const Mang = [
   { title: 'Car', isFruit: false, id: 1 },
   { title: 'motorbike', isFruit: false, id: 2 },
@@ -56,4 +56,4 @@ class Homee extends React.Component {
   }
 }
 
-export default withRouter(MauSac(Homee));
+export default Connect()(withRouter(MauSac(Homee)));
